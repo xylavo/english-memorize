@@ -15,7 +15,7 @@ benevolent 단어 암기법 알려줘
 
 ## 구조
 
-세 개의 **진입점 스킬**과 아홉 개의 **보조 암기법(mnemonic-\*) 스킬**로 구성됩니다. 진입점 스킬이 호출되면, 입력 특성에 맞는 보조 스킬들을 자동으로 골라 호출하고 결과를 하나의 학습 카드로 합칩니다.
+세 개의 **진입점 스킬**과 열한 개의 **보조 암기법(mnemonic-\*) 스킬**로 구성됩니다. 진입점 스킬이 호출되면, 입력 특성에 맞는 보조 스킬들을 자동으로 골라 호출하고 결과를 하나의 학습 카드로 합칩니다.
 
 ```
 english-translate-memorize  (번역 + 난이도 판별 → 아래 두 스킬 자동/선택 호출)
@@ -27,7 +27,8 @@ english-translate-memorize  (번역 + 난이도 판별 → 아래 두 스킬 자
                   ▼
         mnemonic-keyword / etymology / visualization / context /
         storytelling / phonetic-rhythm / chunking / acrostic /
-        memory-palace  (적용 가능한 것만 선택적으로 호출)
+        memory-palace / peg-system / confusable-pair
+        (적용 가능한 것만 선택적으로 호출)
                   │
                   ▼
         mnemonic-spaced-repetition  (복습 일정 생성, 항상 마지막에 호출)
@@ -54,6 +55,8 @@ english-translate-memorize  (번역 + 난이도 판별 → 아래 두 스킬 자
 | `mnemonic-chunking` | 형태소 또는 문장성분 단위 분해 | 긴 복합어, 모든 문장 |
 | `mnemonic-acrostic` | 두문자어/어크로스틱 | 어순이 중요한 문장, 순서 있는 단어 목록 |
 | `mnemonic-memory-palace` | 장소법(경로에 단어 배치) | 같은 주제의 단어 묶음(3개 이상) |
+| `mnemonic-peg-system` | 고정 숫자-모양 페그에 단어 걸기 | 10개 이하의 순서 있는 단어/항목 목록 |
+| `mnemonic-confusable-pair` | 혼동되는 단어 짝 대조(차이점·구분 트릭) | affect/effect처럼 자주 헷갈리는 단어 |
 | `mnemonic-spaced-repetition` | 라이트너 간격 반복(1/3/7/14/30일) | 모든 학습 카드의 마지막 단계 |
 
 ## 저장 형식

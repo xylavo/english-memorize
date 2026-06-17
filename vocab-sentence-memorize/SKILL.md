@@ -45,7 +45,9 @@ metadata:
 | `mnemonic-visualization` | 문장 전체 상황 또는 핵심 동사에 대해 적용 |
 | `mnemonic-etymology` | 문장 내 핵심 단어가 어원 분해 가능하면 적용, 없으면 "해당 없음" |
 | `mnemonic-context` | 1단계 심층 분석에서 이미 다뤘으므로 별도 호출 없이 "1단계 참고"로 표시 |
+| `mnemonic-confusable-pair` | 문장 내 핵심 단어에 흔히 헷갈리는 혼동 짝이 있으면 적용, 없으면 "해당 없음" |
 | `mnemonic-memory-palace` | 단일 문장에는 기본적으로 "해당 없음" (여러 문장/표현 묶음 암기용) |
+| `mnemonic-peg-system` | 단일 문장에는 기본적으로 "해당 없음" (순서 있는 여러 문장/항목 묶음 암기용) |
 
 ### 3단계: 추천 암기법 선정
 
@@ -57,6 +59,7 @@ metadata:
 | 발음/억양이 핵심인 회화 표현 | `mnemonic-phonetic-rhythm` |
 | 관용구/비유적 의미가 핵심 | `mnemonic-storytelling` |
 | 문장 속 핵심 단어 자체가 암기 난이도의 대부분을 차지 | 그 단어에 적용한 `mnemonic-keyword`/`mnemonic-etymology` |
+| 핵심 단어가 다른 단어와 자주 헷갈림 | `mnemonic-confusable-pair` |
 
 ### 4단계: 복습 스케줄 생성
 
@@ -119,8 +122,14 @@ metadata:
 ### 문맥 학습
 1단계 "원어민 뉘앙스 & 사용 상황" 참고
 
+### 혼동어 대조 (핵심 단어: <단어>)
+<출력 또는 "해당 없음 — <이유>">
+
 ### 메모리 팰리스
 해당 없음 — 여러 문장/표현 묶음을 함께 외울 때 사용하는 기법
+
+### 페그법
+해당 없음 — 순서 있는 여러 문장/항목 묶음을 함께 외울 때 사용하는 기법
 
 ## 추천 암기법
 

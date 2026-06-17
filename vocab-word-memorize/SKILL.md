@@ -1,6 +1,6 @@
 ---
 name: vocab-word-memorize
-description: Use when the user gives a single English word, idiom, or technical term and wants to memorize it. Generates ALL applicable mnemonic techniques by invoking every relevant mnemonic-* skill (keyword, etymology, visualization, context, storytelling, phonetic-rhythm, chunking when relevant), ends with a single recommended technique, schedules spaced-repetition reviews, and saves the result as its own file under ~/Desktop/memory/. Examples: "mirage 외워줘", "benevolent 단어 암기법 알려줘", "claustrophobia 외우는 법".
+description: Use when the user gives a single English word, idiom, or technical term and wants to memorize it. Generates ALL applicable mnemonic techniques by invoking every relevant mnemonic-* skill (keyword, etymology, visualization, context, storytelling, phonetic-rhythm, chunking, confusable-pair when relevant), ends with a single recommended technique, schedules spaced-repetition reviews, and saves the result as its own file under ~/Desktop/memory/. Examples: "mirage 외워줘", "benevolent 단어 암기법 알려줘", "claustrophobia 외우는 법".
 metadata:
   category: education
   type: composite
@@ -40,6 +40,8 @@ metadata:
 | `mnemonic-chunking` | 3음절 이상이거나 복합어/긴 단어면 적용, 짧은 단어면 "해당 없음" |
 | `mnemonic-acrostic` | 단일 단어에는 기본적으로 "해당 없음" (여러 단어/철자 순서 암기용) — 단, 철자가 매우 길고 복잡해 철자 순서 자체를 암기해야 하는 경우만 적용 |
 | `mnemonic-memory-palace` | 단일 단어에는 "해당 없음" (관련 단어 묶음 암기용) |
+| `mnemonic-peg-system` | 단일 단어에는 "해당 없음" (순서 있는 여러 단어 묶음을 외울 때 사용하는 기법) |
+| `mnemonic-confusable-pair` | 흔히 헷갈리는 혼동 짝 단어가 있으면 적용 (예: affect/effect). 혼동 짝이 없으면 "해당 없음" |
 
 ### 3. 적용 가능한 기법 모두 실행
 
@@ -57,6 +59,7 @@ metadata:
 | 추상 명사 / 기능어 / 뉘앙스가 중요한 유의어 | `mnemonic-context` |
 | 숙어·관용구 | `mnemonic-storytelling` |
 | 강세/발음이 특히 까다로움 | `mnemonic-phonetic-rhythm` |
+| 흔히 헷갈리는 혼동 짝이 있음 | `mnemonic-confusable-pair` |
 
 ### 5. 복습 스케줄 생성
 
@@ -98,6 +101,12 @@ metadata:
 
 ### 9. 메모리 팰리스
 해당 없음 — 여러 단어 묶음을 함께 외울 때 사용하는 기법
+
+### 10. 페그법
+해당 없음 — 순서 있는 여러 단어 묶음을 함께 외울 때 사용하는 기법
+
+### 11. 혼동어 대조
+<mnemonic-confusable-pair 출력 또는 "해당 없음 — <이유>">
 
 ## 추천 암기법
 
